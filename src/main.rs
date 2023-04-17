@@ -13,8 +13,9 @@ fn main(_image_handle: Handle, mut system_table: SystemTable<Boot>)
 
         info!("Hello world!");
 
-        system_table.boot_services()
+        system_table
+            .boot_services()
             .stall(10_000_000);
-        
+
         Status::SUCCESS
     }
