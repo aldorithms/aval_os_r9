@@ -5,5 +5,5 @@
 2nd fully functional kernel image
 
 ```
-cargo build --target --x86_64-unknown-uefi
+cargo build --target x86_64-unknown-uefi
 ```
