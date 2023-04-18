@@ -175,7 +175,8 @@ fn draw_sierpinski(bt: &BootServices)
     {
         // Open graphics output protocol.
         let gop_handle 
-            = bt.get_handle_for_protocol::<GraphicsOutput>()?;
+            = bt
+                .get_handle_for_protocol::<GraphicsOutput>()?;
 
         let mut gop 
             = bt
@@ -183,10 +184,12 @@ fn draw_sierpinski(bt: &BootServices)
         
         // Open random number generator protocol.
         let rng_handle 
-            = bt.get_handle_for_protocol::<Rng>()?;
+            = bt
+                .get_handle_for_protocol::<Rng>()?;
 
         let mut rng 
-            = bt.open_protocol_exclusive::<Rng>(rng_handle)?;
+            = bt
+                .open_protocol_exclusive::<Rng>(rng_handle)?;
         
         // Create a buffer to draw into.
         let (width, height) 
@@ -209,7 +212,9 @@ fn draw_sierpinski(bt: &BootServices)
                     = ((x as f32) / ((width - 1) as f32)) * 255.0;
 
                 let pixel 
-                    = buffer.pixel(x, y).unwrap();
+                    = buffer
+                        .pixel(x, y)
+                        .unwrap();
 
                 pixel.red 
                      = r as u8;
