@@ -10,8 +10,6 @@ use uefi::proto::loaded_image::LoadedImage;
 use uefi::table::boot::SearchType;
 use uefi::{Identify, Result};
 
-
-
 #[entry]
 fn efi_main(_image_handle: Handle, mut system_table: SystemTable<Boot>) 
     -> Status 
