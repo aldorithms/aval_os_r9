@@ -4,13 +4,25 @@
 extern crate alloc;
 
 use log::info;
-use uefi::prelude::*;
-use uefi::proto::device_path::text::{AllowShortcuts, DevicePathToText, DisplayOnly,};
-use uefi::proto::console::gop::GraphicsOutput;
-use uefi::proto::rng::Rng;
-use uefi::proto::loaded_image::LoadedImage;
-use uefi::table::boot::SearchType;
-use uefi::{Identify, Result};
+
+//use uefi::prelude::*;
+use uefi::
+{ 
+    table::boot::SearchType, prelude::*, Identify, Result, proto::
+    {
+        console::gop::GraphicsOutput,
+        loaded_image::LoadedImage,
+        rng::Rng,
+        device_path::text::
+        {
+            AllowShortcuts, 
+            DevicePathToText, 
+            DisplayOnly
+        },
+    },
+};
+
+
 
 mod buffer;
 mod getranusize;
