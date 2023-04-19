@@ -42,7 +42,7 @@ fn efi_main(_image_handle: Handle, mut system_table: SystemTable<Boot>) // Entry
 
         loop {}
 
-        //Status::SUCCESS
+        // Status::SUCCESS
     }
 
 fn print_image_path(boot_services: &BootServices) 
@@ -184,7 +184,8 @@ fn draw_sierpinski(bt: &BootServices)
                 = buffer
                     .pixel(p.x as usize, p.y as usize)
                     .unwrap();
-    
+            
+            // Set `p` to green.
             pixel.red 
                 = 0;
     
