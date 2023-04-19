@@ -15,7 +15,7 @@ use uefi::{Identify, Result};
 mod buffer;
 mod getranusize;
 mod point;
-mod sierpinski;
+//mod sierpinski;
 
 #[entry]
 fn efi_main(_image_handle: Handle, mut system_table: SystemTable<Boot>) // Entry point of the OS
@@ -37,7 +37,7 @@ fn efi_main(_image_handle: Handle, mut system_table: SystemTable<Boot>) // Entry
             .boot_services() // Get the boot services
             .stall(10_000_000); // Pauses for 10 seconds
         
-        sierpinski::draw_sierpinski(boot_services)
+        draw_sierpinski(boot_services)
             .unwrap();
 
         loop {}
