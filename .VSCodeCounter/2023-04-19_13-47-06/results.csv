@@ -1,0 +1,10 @@
+"filename", "language", "TOML", "Rust", "Markdown", "YAML", "comment", "blank", "total"
+"c:\Users\aldor\Source\repos\Aval-OS\research-os\aval_os_r9\.github\workflows\rust.yml", "YAML", 0, 0, 0, 17, 0, 6, 23
+"c:\Users\aldor\Source\repos\Aval-OS\research-os\aval_os_r9\Cargo.toml", "TOML", 8, 0, 0, 0, 1, 2, 11
+"c:\Users\aldor\Source\repos\Aval-OS\research-os\aval_os_r9\README.md", "Markdown", 0, 0, 6, 0, 0, 4, 10
+"c:\Users\aldor\Source\repos\Aval-OS\research-os\aval_os_r9\rust-toolchain.toml", "TOML", 2, 0, 0, 0, 0, 1, 3
+"c:\Users\aldor\Source\repos\Aval-OS\research-os\aval_os_r9\src\buffer.rs", "Rust", 0, 45, 0, 0, 3, 7, 55
+"c:\Users\aldor\Source\repos\Aval-OS\research-os\aval_os_r9\src\getranusize.rs", "Rust", 0, 12, 0, 0, 1, 3, 16
+"c:\Users\aldor\Source\repos\Aval-OS\research-os\aval_os_r9\src\main.rs", "Rust", 0, 141, 0, 0, 17, 41, 199
+"c:\Users\aldor\Source\repos\Aval-OS\research-os\aval_os_r9\src\point.rs", "Rust", 0, 14, 0, 0, 0, 1, 15
+"Total", "-", 10, 212, 6, 17, 22, 65, 332
