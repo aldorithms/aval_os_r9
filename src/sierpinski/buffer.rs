@@ -8,14 +8,12 @@ pub struct Buffer {
     width: usize,
     height: usize,
     pixels: Vec<BltPixel>,
-}
-        
+} 
+
 impl Buffer {
     /// Create a new `Buffer`.
     pub fn new(width: usize, height: usize) -> Self {
-        Buffer {
-            width, height, pixels: vec![BltPixel::new(0, 0, 0); width * height]
-        }
+        Buffer { width, height, pixels: vec![ BltPixel::new(0, 0, 0); width * height] }
     }
 
     /// Get a single pixel.

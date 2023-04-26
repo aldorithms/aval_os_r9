@@ -22,7 +22,7 @@ pub fn draw_sierpinski(bt: &BootServices) -> Result <()> {
     // Initialize the buffer with a simple gradient background.
     for y in 0..height {
         let r: f32 = ((y as f32) / ((height - 1) as f32)) * 255.0;
-        for x in 0..width {
+        for x in 0 .. width {
             let g: f32 = ((x as f32) / ((width - 1) as f32)) * 255.0;
             let pixel: &mut uefi::proto::console::gop::BltPixel = buffer.pixel(x, y).unwrap();
             pixel.red = r as u8;
